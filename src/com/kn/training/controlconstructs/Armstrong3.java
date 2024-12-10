@@ -1,9 +1,7 @@
 package com.kn.training.controlconstructs;
-
 public class Armstrong3 {
 	static int getcount(int num1) 
-	{
-		int count=0;
+	{      int count=0;
 		while(num1!=0)
 		{
 			int digit=num1%10;
@@ -19,19 +17,15 @@ public class Armstrong3 {
 		}
 		int sum=0;
 		while(num1!=0) {
-		
 		int digit=num1%10;
 		int pow=1;
-		
 		for(int i=1;i<=power;i++)
 		{
-			
-			pow=digit*pow;
+                  pow=digit*pow;
 		}
 		sum=sum+pow;
 		num1=num1/10;
 		}
 	return sum;
-
 }
 }
