@@ -15,30 +15,22 @@ public class Armstrong {
 	}
 	else
 		System.out.println("not a armstrong number");
-	}
-	
-public static boolean isPrintArmstrong(int num)
-{
+	}	
+public static boolean isPrintArmstrong(int num){
 	int original=num;
-
 	int temp=0;
 		for(int i=1;num>0;i++)
-		{   
-			
+		{   	
 		int rem=num%10;
 		temp=temp+(rem*rem*rem);
 		num=num/10;
 		}
 		if(original==temp)//becoz n value will be 0 at the end 
-		{
-			return true;
-		}
+		{	return true;   }
 		else
 		{
 			return false;
 		}
-		
 	}
-
 }
 
